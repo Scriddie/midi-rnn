@@ -25,7 +25,7 @@ def parse_args():
                              'if omitted, will create a new numbered folder in experiments/.')
     parser.add_argument('--rnn_size', type=int, default=64,
                         help='size of RNN hidden state')
-    parser.add_argument('--num_layers', type=int, default=1,
+    parser.add_argument('--num_layers', type=int, default=3,
                         help='number of layers in the RNN')
     parser.add_argument('--learning_rate', type=float, default=None,
                         help='learning rate. If not specified, the recommended learning '\
@@ -34,7 +34,7 @@ def parse_args():
                         help='Window size for RNN input per step.')
     parser.add_argument('--batch_size', type=int, default=32,
                         help='minibatch size')
-    parser.add_argument('--num_epochs', type=int, default=10,
+    parser.add_argument('--num_epochs', type=int, default=20,
                         help='number of epochs before stopping training.')
     parser.add_argument('--dropout', type=float, default=0.2,
                         help='percentage of weights that are turned off every training '\
