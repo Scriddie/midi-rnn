@@ -131,7 +131,7 @@ def load_model_from_checkpoint(model_dir):
                             key=os.path.getctime)
 
     if newest_checkpoint: 
-       epoch = int(newest_checkpoint[-22:-19])
+       epoch = int(newest_checkpoint[-27:-24])
        model.load_weights(newest_checkpoint)
 
     return model, epoch

@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 import os, argparse, time
 import utils
+# import tensorflow as tf
+# tf.compat.v1.disable_v2_behavior()
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, TensorBoard
 from keras.optimizers import SGD, RMSprop, Adagrad, Adadelta, Adam, Adamax, Nadam
+
 
 OUTPUT_SIZE = 129 # 0-127 notes + 1 for rests
 
@@ -124,14 +127,14 @@ def get_model(args, experiment_dir=None):
                   metrics=['accuracy'])
     return model, epoch
 
-def get_callbacks(experiment_dir, checkpoint_monitor='val_acc'):
+def get_callbacks(experiment_dir, checkpoint_monitor='val_accuracy'):
     
     callbacks = []
     
     # save model checkpoints
     filepath = os.path.join(experiment_dir, 
                             'checkpoints', 
-                            'checkpoint-epoch_{epoch:03d}-val_acc_{val_acc:.3f}.hdf5')
+                            'checkpoint-epoch_{epoch:03d}-val_accuracy_{val_accuracy:.3f}.hdf5')
 
     callbacks.append(ModelCheckpoint(filepath, 
                                      monitor=checkpoint_monitor, 

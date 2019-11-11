@@ -38,8 +38,9 @@ def get_experiment_dir(experiment_dir):
 	if experiment_dir == 'experiments/default':
 		dirs_ = [os.path.join('experiments', d) for d in os.listdir('experiments') \
 		         if os.path.isdir(os.path.join('experiments', d))]
-		experiment_dir = max(dirs_, key=os.path.getmtime)
-
+		experiment_dir = max(dirs_, key=os.path.getmtime)  # access time unreliable
+		print(f"MODEL: {experiment_dir}")
+        
 	if not os.path.exists(os.path.join(experiment_dir, 'model.json')):
 		utils.log('Error: {} does not exist. ' \
 			      'Are you sure that {} is a valid experiment?' \
