@@ -17,11 +17,10 @@
 ### Request the amount of memory you need for your job.
 ### You can specify this in either MB (1024M) or GB (4G).
 #SBATCH --mem-per-cpu=16G
-#SBATCH --cpus-per-task 24
 #SBATCH --gres=gpu:volta:1
 
 ### if needed: switch to your working directory (where you saved your program)
-#cd $HOME/a/
+cd $HOME/midi-rnn/
 
 ### Load modules
 module switch intel gcc
@@ -31,6 +30,6 @@ module load cudnn/7.4
 pip install --user -r requirements.txt
 
 ### your code goes here, the second part of the jobscript
-python3 train.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 64 --num_layers 1 --window_size 20 --batch_size 32 --num_epochs 10 --dropout 0.2 --optimizer adam --grad_clip 5 --n_jobs 1 --max_files_in_ram 25 --verbose True
-python3 train.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 128 --num_layers 1 --window_size 64 --batch_size 32 --num_epochs 50 --dropout 0.2 --optimizer adam --grad_clip 5 --n_jobs 1 --max_files_in_ram 25 --verbose True
-python3 train.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 256 --num_layers 2 --window_size 256 --batch_size 32 --num_epochs 100 --dropout 0.2 --optimizer adam --grad_clip 5 --n_jobs 1 --max_files_in_ram 25 --verbose True
+python3 train_gpu.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 64 --num_layers 1 --window_size 20 --batch_size 32 --num_epochs 10 --dropout 0.2 --optimizer adam --grad_clip 5 --n_jobs 1 --max_files_in_ram 25 --verbose True
+python3 train_gpu.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 128 --num_layers 1 --window_size 64 --batch_size 32 --num_epochs 50 --dropout 0.2 --optimizer adam --grad_clip 5 --n_jobs 1 --max_files_in_ram 25 --verbose True
+python3 train_gpu.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 256 --num_layers 2 --window_size 256 --batch_size 32 --num_epochs 100 --dropout 0.2 --optimizer adam --grad_clip 5 --n_jobs 1 --max_files_in_ram 25 --verbose True
