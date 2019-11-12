@@ -1,0 +1,5 @@
+data_dir,experiment_dir,rnn_size,num_layers,learning_rate,window_size,batch_size,num_epochs,dropout,optimizer,grad_clip,message,n_jobs,max_files_in_ram,verbose
+data/midi, experiments/default,10,1, None,20,32,1,0.2, adam,5, None,1,25, True
+data/midi, experiments/default,10,2, None,20,32,1,0.2, adam,5, None,1,25, True
+data/midi, experiments/default,10,3, None,20,32,1,0.2, adam,5, None,1,25, True
+data/midi, experiments/default,10,4, None,20,32,1,0.2, adam,5, None,1,25, True

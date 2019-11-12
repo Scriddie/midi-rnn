@@ -3,6 +3,30 @@ import pretty_midi
 import numpy as np
 from keras.models import model_from_json
 from multiprocessing import Pool as ThreadPool
+import pandas as pd
+
+def write_schedule():
+    schedule = pd.read_csv("experiment_schedule.csv")
+    with open("experiment_schedule.txt", "w") as f:
+        for i in range(schedule.shape[0]):
+            experiment = "python train.py"
+            for j in range(schedule.shape[1]):
+                col_name = schedule.columns[j]
+                param = schedule.iloc[i, j]
+                experiment += f" --{col_name} {param}"
+            f.write(f"{experiment}\n")
+
+def plan_experiments():
+    if not os.path.exists("./experiment_schedule.txt"):
+        write_schedule()
+        print("Experiment schedule successfully created")
+    else:
+        dec = input("Warning, schedule already exists. Overwrite? (Y)")
+        if dec in ["Y", "y"]:
+            write_schedule()
+            print("Experiment schedule successfully created")
+        else:
+            pass
 
 def log(message, verbose):
 	if verbose:
@@ -13,8 +37,8 @@ def log_permanent(model_parameters):
     if not os.path.exists("./experiment_data.csv"):
         with open("experiment_data.csv", "w") as f:
             # make sure the order is right
-            f.write("rnn_size, num_layers, learning_rate, window_size, \
-batch_size, num_epochs, dropout, optimizer, grad_clip, message, n_jobs, max_files_in_ram, verbose\n")
+            f.write("data_dir,experiment_dir,rnn_size,num_layers,learning_rate,window_size,\
+batch_size,num_epochs,dropout,optimizer,grad_clip,message,n_jobs,max_files_in_ram,verbose\n")
     with open("experiment_data.csv", "a") as f:
         experiment = ""
         for key, value in model_parameters.items():
