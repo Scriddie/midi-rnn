@@ -13,7 +13,10 @@ def write_schedule():
             for j in range(schedule.shape[1]):
                 col_name = schedule.columns[j]
                 param = schedule.iloc[i, j]
-                experiment += f" --{col_name} {param}"
+                if isinstance(param, str):
+                    experiment += f" --{col_name} '{param}'"
+                else:
+                    experiment += f" --{col_name} {param}"
             f.write(f"{experiment}\n")
 
 # def plan_experiments():
@@ -45,7 +48,7 @@ batch_size,num_epochs,dropout,optimizer,grad_clip,message,n_jobs,max_files_in_ra
             if len(experiment) == 0:
                 experiment = value
             else:
-                experiment = f"{experiment}, {value}"
+                experiment = f"{experiment},{value}"
         experiment = f"{experiment}\n"
         f.write(experiment)
 
