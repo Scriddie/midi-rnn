@@ -5,7 +5,7 @@ import utils
 # tf.compat.v1.disable_v2_behavior()
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
-from keras.layers import LSTM
+from keras.layers import CuDNNLSTM
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, TensorBoard
 from keras.optimizers import SGD, RMSprop, Adagrad, Adadelta, Adam, Adamax, Nadam
 
@@ -76,15 +76,15 @@ def get_model(args, experiment_dir=None):
                     kwargs['return_sequences'] = False
                 else:
                     kwargs['return_sequences'] = True
-                model.add(LSTM(**kwargs))
+                model.add(CuDNNLSTM(**kwargs))
             else:
                 # if this is a middle layer
                 if not layer_index == args.num_layers - 1:
                     kwargs['return_sequences'] = True
-                    model.add(LSTM(**kwargs))
+                    model.add(CuDNNLSTM(**kwargs))
                 else: # this is the last layer
                     kwargs['return_sequences'] = False
-                    model.add(LSTM(**kwargs))
+                    model.add(CuDNNLSTM(**kwargs))
             model.add(Dropout(args.dropout))
         model.add(Dense(OUTPUT_SIZE))
         model.add(Activation('softmax'))
