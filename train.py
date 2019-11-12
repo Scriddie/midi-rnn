@@ -16,10 +16,10 @@ def parse_args():
 
     parser = argparse.ArgumentParser(
                         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--data_dir', type=str, default='data/midi',
+    parser.add_argument('--data_dir', type=utils.none_or_str, default='data/midi',
                         help='data directory containing .mid files to use for' \
                              'training')
-    parser.add_argument('--experiment_dir', type=str,
+    parser.add_argument('--experiment_dir', type=utils.none_or_str,
                         default='experiments/default',
                         help='directory to store checkpointed models and tensorboard logs.' \
                              'if omitted, will create a new numbered folder in experiments/.')
@@ -47,7 +47,7 @@ def parse_args():
                         'See https://keras.io/optimizers for a full list of optimizers.')
     parser.add_argument('--grad_clip', type=float, default=5.0,
                         help='clip gradients at this value.')
-    parser.add_argument('--message', '-m', type=str,
+    parser.add_argument('--message', '-m', type=utils.none_or_str,
                         help='a note to self about the experiment saved to message.txt '\
                         'in --experiment_dir.')
     parser.add_argument('--n_jobs', '-j', type=int, default=1, 

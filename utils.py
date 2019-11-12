@@ -5,6 +5,11 @@ from keras.models import model_from_json
 from multiprocessing import Pool as ThreadPool
 import pandas as pd
 
+def none_or_str(value):
+    if value == 'None':
+        return None
+    return value
+
 def write_schedule():
     schedule = pd.read_csv("experiment_schedule.csv")
     with open("jobscript.sh", "a") as f:
