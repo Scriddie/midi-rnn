@@ -18,23 +18,11 @@ def write_schedule():
             for j in range(schedule.shape[1]):
                 col_name = schedule.columns[j]
                 param = schedule.iloc[i, j]
-                if isinstance(param, str):
+                if isinstance(param, str) or isinstance(param, np.bool_):
                     pass
                 else:
                     experiment += f" --{col_name} {param}"
             f.write(f"{experiment}\n")
-
-# def plan_experiments():
-#     if not os.path.exists("./experiment_schedule.txt"):
-#         write_schedule()
-#         print("Experiment schedule successfully created")
-#     else:
-#         dec = input("Warning, schedule already exists. Overwrite? (Y)")
-#         if dec in ["Y", "y"]:
-#             write_schedule()
-#             print("Experiment schedule successfully created")
-#         else:
-#             pass
 
 def log(message, verbose):
 	if verbose:
