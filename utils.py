@@ -7,26 +7,26 @@ import pandas as pd
 
 def write_schedule():
     schedule = pd.read_csv("experiment_schedule.csv")
-    with open("experiment_schedule.txt", "w") as f:
+    with open("jobscript.sh", "a") as f:
         for i in range(schedule.shape[0]):
-            experiment = "python train.py"
+            experiment = "python3 train.py"
             for j in range(schedule.shape[1]):
                 col_name = schedule.columns[j]
                 param = schedule.iloc[i, j]
                 experiment += f" --{col_name} {param}"
             f.write(f"{experiment}\n")
 
-def plan_experiments():
-    if not os.path.exists("./experiment_schedule.txt"):
-        write_schedule()
-        print("Experiment schedule successfully created")
-    else:
-        dec = input("Warning, schedule already exists. Overwrite? (Y)")
-        if dec in ["Y", "y"]:
-            write_schedule()
-            print("Experiment schedule successfully created")
-        else:
-            pass
+# def plan_experiments():
+#     if not os.path.exists("./experiment_schedule.txt"):
+#         write_schedule()
+#         print("Experiment schedule successfully created")
+#     else:
+#         dec = input("Warning, schedule already exists. Overwrite? (Y)")
+#         if dec in ["Y", "y"]:
+#             write_schedule()
+#             print("Experiment schedule successfully created")
+#         else:
+#             pass
 
 def log(message, verbose):
 	if verbose:
