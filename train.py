@@ -23,9 +23,9 @@ def parse_args():
                         default='experiments/default',
                         help='directory to store checkpointed models and tensorboard logs.' \
                              'if omitted, will create a new numbered folder in experiments/.')
-    parser.add_argument('--rnn_size', type=int, default=64,
+    parser.add_argument('--rnn_size', type=int, default=10,
                         help='size of RNN hidden state')
-    parser.add_argument('--num_layers', type=int, default=3,
+    parser.add_argument('--num_layers', type=int, default=1,
                         help='number of layers in the RNN')
     parser.add_argument('--learning_rate', type=float, default=None,
                         help='learning rate. If not specified, the recommended learning '\
@@ -34,7 +34,7 @@ def parse_args():
                         help='Window size for RNN input per step.')
     parser.add_argument('--batch_size', type=int, default=32,
                         help='minibatch size')
-    parser.add_argument('--num_epochs', type=int, default=20,
+    parser.add_argument('--num_epochs', type=int, default=1,
                         help='number of epochs before stopping training.')
     parser.add_argument('--dropout', type=float, default=0.2,
                         help='percentage of weights that are turned off every training '\
@@ -235,6 +235,7 @@ def main():
                         callbacks=callbacks,
                         initial_epoch=epoch)
     utils.log('Finished in {:.2f} seconds'.format(time.time() - start_time), args.verbose)
+    utils.log_permanent(vars(args))
 
 if __name__ == '__main__':
     main()
