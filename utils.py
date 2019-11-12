@@ -18,8 +18,8 @@ def write_schedule():
             for j in range(schedule.shape[1]):
                 col_name = schedule.columns[j]
                 param = schedule.iloc[i, j]
-                if isinstance(param, str):
-                    experiment += f" --{col_name} '{param}'"
+                if param == "None":
+                    pass
                 else:
                     experiment += f" --{col_name} {param}"
             f.write(f"{experiment}\n")

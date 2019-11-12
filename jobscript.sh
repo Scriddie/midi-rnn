@@ -32,5 +32,4 @@ module load cudnn/7.4
 pip install --user -r requirements.txt
 
 ### your code goes here, the second part of the jobscript
-
-python3 train.py --data_dir 'data/midi' --experiment_dir 'experiments/default' --rnn_size 10 --num_layers 1 --learning_rate 'None' --window_size 20 --batch_size 32 --num_epochs 1 --dropout 0.2 --optimizer 'adam' --grad_clip 5.0 --message 'None' --n_jobs 1 --max_files_in_ram 25 --verbose True
+python3 train.py --data_dir data/midi --experiment_dir experiments/default --rnn_size 10 --num_layers 1 --window_size 20 --batch_size 32 --num_epochs 1 --dropout 0.2 --optimizer adam --grad_clip 5.0 --n_jobs 1 --max_files_in_ram 25 --verbose True
