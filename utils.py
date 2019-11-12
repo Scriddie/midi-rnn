@@ -21,6 +21,7 @@ def write_schedule():
                 if isinstance(param, str) or isinstance(param, np.bool_):
                     pass
                 else:
+                    
                     experiment += f" --{col_name} {param}"
             f.write(f"{experiment}\n")
 
