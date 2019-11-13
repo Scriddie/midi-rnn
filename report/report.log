@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 NEXT 64-bit) (preloaded format=pdflatex 2019.10.5)  13 NOV 2019 00:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 NEXT 64-bit) (preloaded format=pdflatex 2019.10.5)  13 NOV 2019 01:45
 entering extended mode
 **c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.tex
 (c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.tex
@@ -411,7 +411,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ./figures/tensorboard_2.png Graphic file (type png)
 <use ./figures/tensorboard_2.png>
 Package pdftex.def Info: ./figures/tensorboard_2.png  used on input line 28.
-(pdftex.def)             Requested size: 309.85475pt x 242.55394pt.
+(pdftex.def)             Requested size: 275.4241pt x 215.60167pt.
 [1
 
 {C:/Users/alexa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/tensorboard_2.png>]
@@ -421,27 +421,27 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
-<./figures/stack_more_layers.png, id=11, 1072.005pt x 978.65625pt>
+<./figures/stack_more_layers.png, id=12, 1072.005pt x 978.65625pt>
 File: ./figures/stack_more_layers.png Graphic file (type png)
 <use ./figures/stack_more_layers.png>
 Package pdftex.def Info: ./figures/stack_more_layers.png  used on input line 47.
-(pdftex.def)             Requested size: 268.0006pt x 244.66347pt.
-<./figures/experiment_schedule_2.png, id=12, 493.0922pt x 58.71938pt>
+(pdftex.def)             Requested size: 300.15935pt x 274.02188pt.
+<./figures/experiment_schedule_2.png, id=13, 493.0922pt x 58.71938pt>
 File: ./figures/experiment_schedule_2.png Graphic file (type png)
 <use ./figures/experiment_schedule_2.png>
 Package pdftex.def Info: ./figures/experiment_schedule_2.png  used on input line 55.
 (pdftex.def)             Requested size: 394.47429pt x 46.97554pt.
- [2 <./figures/stack_more_layers.png> <./figures/experiment_schedule_2.png>] [3] (c:/Users\alexa\OneDrive\Documents\Studies\AI\ACML\Assignment2\midi-rnn\report\report.aux) ) 
+ [2 <./figures/stack_more_layers.png>] [3 <./figures/experiment_schedule_2.png>] (c:/Users\alexa\OneDrive\Documents\Studies\AI\ACML\Assignment2\midi-rnn\report\report.aux) ) 
 Here is how much of TeX's memory you used:
- 16041 strings out of 492895
- 307301 string characters out of 3133479
- 433318 words of memory out of 3000000
- 19879 multiletter control sequences out of 15000+200000
- 535058 words of font info for 33 fonts, out of 3000000 for 9000
+ 16044 strings out of 492895
+ 307346 string characters out of 3133479
+ 433352 words of memory out of 3000000
+ 19882 multiletter control sequences out of 15000+200000
+ 535365 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,61p,911b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,7n,61p,1005b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on c:/Users\alexa\OneDrive\Documents\Studies\AI\ACML\Assignment2\midi-rnn\report\report.pdf (3 pages, 1628382 bytes).
+Output written on c:/Users\alexa\OneDrive\Documents\Studies\AI\ACML\Assignment2\midi-rnn\report\report.pdf (3 pages, 1633048 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -116,8 +116,10 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 INPUT figures\tensorboard_2.png
 INPUT .\figures\tensorboard_2.png
 OUTPUT c:\Users\alexa\OneDrive\Documents\Studies\AI\ACML\Assignment2\midi-rnn\report\report.pdf
@@ -138,7 +140,6 @@ INPUT .\figures\experiment_schedule_2.png
 INPUT .\figures\experiment_schedule_2.png
 INPUT .\figures\experiment_schedule_2.png
 INPUT .\figures\experiment_schedule_2.png
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 INPUT c:\Users\alexa\OneDrive\Documents\Studies\AI\ACML\Assignment2\midi-rnn\report\report.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
