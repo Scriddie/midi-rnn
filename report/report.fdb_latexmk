@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1573605913 "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.tex" "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.pdf" "report" 1573605915
+["pdflatex"] 1573636432 "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.tex" "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.pdf" "report" 1573636616
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -60,16 +60,16 @@
   "C:/Users/alexa/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1570266772 4235424 054a4a6d1bccd38f01e3b8afa987767b ""
   "C:/Users/alexa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1571757834 80453 73224248f0a73acd005b5611945eaaa6 ""
   "article.cls" 1572981908 20572 d9dea7e334d1a7b9b38cf0721df490e5 ""
-  "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.aux" 1573605915 1091 5097d7ab22bdd7ea4fbda68158e2d7fd ""
-  "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.tex" 1573605913 3291 43b13b2dcdee354eafb18ab9fd6c7043 ""
+  "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.aux" 1573636434 1091 5097d7ab22bdd7ea4fbda68158e2d7fd ""
+  "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.tex" 1573636615 3446 cd9db2bb87d053cdfaaa7d7db70e2155 ""
   "figures/experiment_schedule_2.png" 1573601719 5627 8f1f9bd298f50aece81b96ee68e5516b ""
   "figures/stack_more_layers.png" 1573598877 1650696 5b76a4aee7acb30372706a06fa7044f0 ""
   "figures/tensorboard_2.png" 1573600443 81646 e02bf0742c8d91b151fdcbfda952da8d ""
-  "report.aux" 1573605915 1091 5097d7ab22bdd7ea4fbda68158e2d7fd "pdflatex"
-  "report.tex" 1573605913 3291 43b13b2dcdee354eafb18ab9fd6c7043 ""
+  "report.aux" 1573636434 1091 5097d7ab22bdd7ea4fbda68158e2d7fd "pdflatex"
+  "report.tex" 1573636615 3446 cd9db2bb87d053cdfaaa7d7db70e2155 ""
   (generated)
+  "report.log"
   "report.aux"
   "report.pdf"
-  "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.pdf"
   "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.log"
-  "report.log"
+  "c:/Users/alexa/OneDrive/Documents/Studies/AI/ACML/Assignment2/midi-rnn/report/report.pdf"
